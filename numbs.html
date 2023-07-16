@@ -1,0 +1,106 @@
+<head>
+    <title>Zehn zehn translator.</title>
+
+</head>
+<body style="background-color:rgb(111, 86, 134);">
+    <h1 style="color:rgb(251, 127, 255);">Made by squing.</h1>
+    <script>let num = parseInt(prompt("Enter number to translate into zehnzehn"));
+        function und(n){
+            if(n-20>=20){
+                document.write(" und"); //block of code that just checks if you can still take away 20.
+        }
+        }
+        let secnum = num % 20;
+        let i = num;
+        
+        if(num==0){
+            document.write("Null");
+        }
+        
+        
+        switch (secnum){
+            case 1:
+                document.write("Eins");
+                i--;
+                break;
+            case 2:
+                document.write("Zwei");
+                i-=2;
+                break;
+            case 3:
+                document.write("Drei");
+                i-=3;
+                break;
+            case 4:
+                document.write("Vier");
+                i-=4;
+                break;
+            case 5:
+                document.write("Funf");
+                i-=5;
+                break;
+            case 6:
+                document.write("Sechs");
+                i-=6;
+                break;
+            case 7:
+                document.write("Sieben");
+                i-=7;
+                break;
+            case 8:
+                document.write("Acht");
+                i-=8;
+                break;
+            case 9:
+                i-=9;
+                document.write("Neun");
+                break;
+            case 10:
+                i-=10;
+                document.write("Zehn");
+                break;
+            case 11:
+                i-=11;
+                document.write("Elf");
+                break;
+            case 12:
+                i-=12;
+                document.write("Zwolf");
+                break;
+            case 13:
+                i-=13;
+                document.write("Dreizehn");
+                break;
+            case 14:
+                i-=14;
+                document.write("Vierzehn");
+                break;
+            case 15:
+                i-=15;
+                document.write("Funfzehn");
+                break;
+            case 16:
+                i-=16;
+                document.write("Sechszehn");
+                break;
+            case 17:
+                i-=17;
+                document.write("Siebenzehn");
+                break;
+            case 18:
+                i-=18;
+                document.write("Achtzehn");
+                break;
+            case 19:
+                i-=19;
+                document.write("Neunzehn");
+                break;
+        }
+        if(i>=20&&i%20!=0){
+            document.write(" und")
+        }
+        for(i; i>=20; i-=20){
+            document.write(" zehnzehn");
+            und(i);
+        }</script>
+</body>
